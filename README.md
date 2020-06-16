@@ -4,9 +4,9 @@
 
 ## Basics
 
-- [Comandos básicos do docker]('./comandos.md')
-- [Explicação resumida sobre docker]('./docs)
-- [Exemplo de dockerfile]('./dockerfile/exemplo01)
-- [Exemplo de docker-compose]('./dockerfile/exemplo02)
+- [Comandos básicos do docker]('comandos.md')
+- [Explicação resumida sobre docker]('docs)
+- [Exemplo de dockerfile]('dockerfile/exemplo01)
+- [Exemplo de docker-compose]('dockerfile/exemplo02)
 
 
