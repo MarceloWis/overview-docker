@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx:/usr/share/nginx/html/ # Compartilha a pasta nginx com o container
+    ports:
+      - 8080:80
+  redis:
+    image: redis:alpine
+    expose: # Liberar acesso aos outro containers para a porta 6379
+      - 6379

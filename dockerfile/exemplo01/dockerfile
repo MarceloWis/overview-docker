@@ -1,0 +1,16 @@
+FROM golang:1.14
+
+# Diretorio no container
+WORKDIR /go/src/
+
+# Copia todos os arquivo da pasta local na maquina para o container
+COPY . .
+
+# Comando para compilar o arquivo em goLang
+RUN GOOS=linux go build main.go
+
+ENTRYPOINT [ "./main" ]
+
+#-t => Nome da imagem
+# . => Onde o arquivo dockerfile está
+# docker build -t marcelowis/esquenta-maratona-go:latest .
